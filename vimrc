@@ -1,6 +1,27 @@
 " Required to be able to use tab completion in ex mode
 set nocompatible
 
+" Highlight search
+set incsearch
+set hlsearch
+nnoremap <cr> :nohlsearch<cr><cr>
+
+" Filetype, syntax settings
+filetype plugin indent on
+syntax on
+
+" Kill default ftplugins
+autocmd BufReadPre,BufNewFile * let b:did_ftplugin = 1
+
+" Indentation settings
+set autoindent
+set expandtab
+set tabstop=2
+set shiftwidth=2
+
+" Mapping timeout len
+set timeoutlen=250
+
 " Kill shift key on typing special characters
 " map each number to its shift-key character
 noremap! 1 !
@@ -33,6 +54,7 @@ noremap 22 @@
 noremap 3 #
 noremap 8 *
 noremap 4 $
+noremap 5 %
 noremap 6 ^
 noremap - _
 noremap § -
@@ -48,6 +70,26 @@ noremap [ {
 noremap ] }
 noremap { [
 noremap } ]
+
+" Curly braces are used more often:
+inoremap [ {
+cnoremap [ {
+inoremap ] }
+cnoremap ] }
+inoremap { [
+cnoremap { [
+inoremap } ]
+cnoremap } ]
+
+" search for them too with fC and FC
+noremap f[ f{
+noremap F[ F{
+noremap f] f}
+noremap F] F}
+noremap f{ f[
+noremap F{ F[
+noremap f} f]
+noremap F} F]
 
 " Shortcut for -> and =>
 inoremap -. ->
