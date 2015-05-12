@@ -14,7 +14,13 @@ inoremap <buffer> subject<space> subject(:name) {  }<esc>F i
 inoremap <buffer> let<space> let(:name) {  }<esc>F i
 inoremap <buffer> it<space> it "" do<cr>end<esc>-^f"a
 inoremap <buffer> expect<space> expect()<esc>i
+inoremap <buffer> allow<space> allow()<esc>i
+inoremap <buffer> receive<space> receive(:)<esc>i
 inoremap <buffer> .to<space> <esc>A.to<space>
+
+" factory_girl boilerplate
+inoremap <buffer> letb<space> let(:name) { FactoryGirl.build() }<esc>F)i
+inoremap <buffer> letc<space> let(:name) { FactoryGirl.create() }<esc>F)i
 
 " use only double quotes
 inoremap <buffer> ' "

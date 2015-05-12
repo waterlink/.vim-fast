@@ -2,13 +2,17 @@
 set nocompatible
 
 " Plugins
+" https://github.com/kien/ctrlp.vim
 set runtimepath^=~/.vim/bundle/ctrlp
+" https://github.com/Lokaltog/vim-easymotion
+set runtimepath^=~/.vim/bundle/easy-motion
+" custom configuration for plugins
 set runtimepath^=~/.vim/custom
 
 " Highlight search
 set incsearch
 set hlsearch
-nnoremap <cr> :nohlsearch<cr><cr>
+nnoremap <bs> :nohlsearch<cr>
 
 " Filetype, syntax settings
 filetype plugin indent on
@@ -127,6 +131,9 @@ nnoremap <Space>w <C-W>w
 " less keys for redo command
 noremap <tab>r r
 noremap r <C-R>
+
+" use = to re-indent the whole file and jump back
+nnoremap = gg=G`'
 
 " TODO:
 " (empty)

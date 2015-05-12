@@ -6,5 +6,5 @@ if executable('ag')
   let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 endif
 
-let g:ctrlp_map = '<space>'
+let g:ctrlp_map = '<cr>'
 let g:ctrlp_cmd = 'CtrlPMixed'
