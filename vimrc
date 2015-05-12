@@ -1,6 +1,10 @@
 " Required to be able to use tab completion in ex mode
 set nocompatible
 
+" Plugins
+set runtimepath^=~/.vim/bundle/ctrlp
+set runtimepath^=~/.vim/custom
+
 " Highlight search
 set incsearch
 set hlsearch

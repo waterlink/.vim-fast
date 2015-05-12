@@ -37,8 +37,9 @@ inoremap <buffer> {} []<esc>i
 inoremap <buffer> {}<cr> []<esc>i<cr><cr><esc>-A<tab>
 inoremap <buffer> {}<space> [  ]<esc>F i
 
-" shift-less ::
-inoremap <buffer> ;; ::
+" shift-less :
+inoremap <buffer> ; :
+inoremap <buffer> : ;
 
 " tab completion (do double <space> for indentation)
 inoremap <buffer> <tab> <c-p>
