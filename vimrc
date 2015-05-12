@@ -1,11 +1,23 @@
 " Required to be able to use tab completion in ex mode
 set nocompatible
 
+" Filetype, syntax settings
+filetype plugin indent on
+syntax on
+
+" Kill default ftplugins
+autocmd BufReadPre,BufNewFile * let b:did_ftplugin = 1
+
 " Plugins
 " https://github.com/kien/ctrlp.vim
 set runtimepath^=~/.vim/bundle/ctrlp
+
 " https://github.com/Lokaltog/vim-easymotion
 set runtimepath^=~/.vim/bundle/easy-motion
+
+" https://github.com/vim-ruby/vim-ruby
+set runtimepath^=~/.vim/bundle/vim-ruby
+
 " custom configuration for plugins
 set runtimepath^=~/.vim/custom
 
@@ -13,13 +25,6 @@ set runtimepath^=~/.vim/custom
 set incsearch
 set hlsearch
 nnoremap <bs> :nohlsearch<cr>
-
-" Filetype, syntax settings
-filetype plugin indent on
-syntax on
-
-" Kill default ftplugins
-autocmd BufReadPre,BufNewFile * let b:did_ftplugin = 1
 
 " Indentation settings
 set autoindent
@@ -98,6 +103,12 @@ noremap f{ f[
 noremap F{ F[
 noremap f} f]
 noremap F} F]
+
+" swap or with backslash
+inoremap \ \|
+cnoremap \ \|
+inoremap \| <Bslash>
+cnoremap \| <Bslash>
 
 " Shortcut for -> and =>
 inoremap -. ->

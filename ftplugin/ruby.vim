@@ -7,6 +7,11 @@ inoremap <buffer> -.90 -> (args) {  }<esc>F i
 inoremap <buffer> do<enter> do<cr>end<esc>-o
 inoremap <buffer> do<space> do \|\|<cr>end<esc>-$i
 
+" transformations
+vnoremap <buffer> memoize "gy+^i@_ <esc>"gPf a\|\|= <esc>`'
+vnoremap <buffer> [] :s/\<do\>/{/g<cr>gv:s/\<end\>/}/g<cr>gv
+vnoremap <buffer> {} :s/{/do/g<cr>gv:s/}/end/g<cr>gv
+
 " rspec boilerplate
 inoremap <buffer> rspec<space> RSpec.describe name do<cr>end<esc>-^f lce
 inoremap <buffer> describe<space> describe "" do<cr>end<esc>-^f"a
@@ -17,6 +22,13 @@ inoremap <buffer> expect<space> expect()<esc>i
 inoremap <buffer> allow<space> allow()<esc>i
 inoremap <buffer> receive<space> receive(:)<esc>i
 inoremap <buffer> .to<space> <esc>A.to<space>
+inoremap <buffer> itis it { is_expected.to  }<esc>F i
+
+" rspec doubles boilerplate
+inoremap <buffer> letd<space> let(:name) { double() }<esc>F)i
+inoremap <buffer> letid<space> let(:name) { instance_double() }<esc>F)i
+inoremap <buffer> letcd<space> let(:name) { class_double() }<esc>F)i
+inoremap <buffer> letod<space> let(:name) { object_double() }<esc>F)i
 
 " factory_girl boilerplate
 inoremap <buffer> letb<space> let(:name) { FactoryGirl.build() }<esc>F)i
@@ -49,4 +61,3 @@ inoremap <buffer> : ;
 
 " tab completion (do double <space> for indentation)
 inoremap <buffer> <tab> <c-p>
-

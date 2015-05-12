@@ -4,3 +4,6 @@
 [submodule "bundle/easy-motion"]
 	path = bundle/easy-motion
 	url = https://github.com/Lokaltog/vim-easymotion
+[submodule "bundle/vim-ruby"]
+	path = bundle/vim-ruby
+	url = https://github.com/vim-ruby/vim-ruby
