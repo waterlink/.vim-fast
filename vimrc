@@ -18,6 +18,9 @@ set runtimepath^=~/.vim/bundle/easy-motion
 " https://github.com/vim-ruby/vim-ruby
 set runtimepath^=~/.vim/bundle/vim-ruby
 
+" crystal
+set runtimepath^=~/.vim/bundle/vim-crystal
+
 " custom configuration for plugins
 set runtimepath^=~/.vim/custom
 
@@ -31,6 +34,10 @@ set autoindent
 set expandtab
 set tabstop=2
 set shiftwidth=2
+
+" swapfile goes to /tmp dir
+set swapfile
+set dir=~/tmp
 
 " Mapping timeout len
 set timeoutlen=250
