@@ -45,6 +45,13 @@ if executable('ag')
   set grepprg=ag\ --nogroup\ --nocolor
 endif
 
+" Fast switching between search results
+nnoremap <left> :cprev<cr>
+nnoremap <right> :cnext<cr>
+
+" Search for a word
+nnoremap K :silent grep "\b<c-r><c-w>\b"<cr><c-l>
+
 " Mapping timeout len
 set timeoutlen=250
 
