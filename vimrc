@@ -39,6 +39,12 @@ set shiftwidth=2
 set swapfile
 set dir=~/tmp
 
+" The Silver Searcher
+if executable('ag')
+  " Use ag over grep
+  set grepprg=ag\ --nogroup\ --nocolor
+endif
+
 " Mapping timeout len
 set timeoutlen=250
 
