@@ -21,6 +21,9 @@ set runtimepath^=~/.vim/bundle/vim-ruby
 " crystal
 set runtimepath^=~/.vim/bundle/vim-crystal
 
+" riotjs
+set runtimepath^=~/.vim/bundle/vim-riotjs
+
 " custom configuration for plugins
 set runtimepath^=~/.vim/custom
 
