@@ -41,6 +41,11 @@ set expandtab
 set tabstop=2
 set shiftwidth=2
 
+" Nice editing features
+set number
+set cursorline
+set cursorcolumn
+
 " swapfile goes to /tmp dir
 set swapfile
 set dir=~/tmp
