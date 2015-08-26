@@ -27,6 +27,9 @@ set runtimepath^=~/.vim/bundle/vim-riotjs
 " golang
 set runtimepath^=~/.vim/bundle/vim-go
 
+" elixir
+set runtimepath^=~/.vim/bundle/vim-elixir
+
 " custom configuration for plugins
 set runtimepath^=~/.vim/custom
 
