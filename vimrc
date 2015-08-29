@@ -30,6 +30,9 @@ set runtimepath^=~/.vim/bundle/vim-go
 " elixir
 set runtimepath^=~/.vim/bundle/vim-elixir
 
+" cucumber
+set runtimepath^=~/.vim/bundle/vim-cucumber
+
 " custom configuration for plugins
 set runtimepath^=~/.vim/custom
 
