@@ -166,10 +166,6 @@ cnoremap ,= <=
 inoremap .= >=
 cnoremap .= >=
 
-" z -> A
-noremap z A
-noremap A :echo 'Use z instead of A!'<CR>
-
 " shift-less :
 nnoremap \ :
 vnoremap \ :
