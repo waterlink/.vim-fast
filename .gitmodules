@@ -16,3 +16,6 @@
 [submodule "bundle/vim-cucumber"]
 	path = bundle/vim-cucumber
 	url = https://github.com/tpope/vim-cucumber
+[submodule "bundle/elm.vim"]
+	path = bundle/elm.vim
+	url = https://github.com/lambdatoast/elm.vim
