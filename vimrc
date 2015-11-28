@@ -36,6 +36,9 @@ set runtimepath^=~/.vim/bundle/vim-cucumber
 " elm
 set runtimepath^=~/.vim/bundle/elm.vim
 
+" scala
+set runtimepath^=~/.vim/bundle/vim-scala
+
 " custom configuration for plugins
 set runtimepath^=~/.vim/custom
 
