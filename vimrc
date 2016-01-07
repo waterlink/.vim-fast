@@ -39,6 +39,14 @@ set runtimepath^=~/.vim/bundle/elm.vim
 " scala
 set runtimepath^=~/.vim/bundle/vim-scala
 
+" clojure
+set runtimepath^=~/.vim/bundle/vim-clojure-static
+set runtimepath^=~/.vim/bundle/vim-fireplace
+set runtimepath^=~/.vim/bundle/vim-clojure-highlight
+
+" better parenthesis
+set runtimepath^=~/.vim/bundle/rainbow_parentheses.vim
+
 " custom configuration for plugins
 set runtimepath^=~/.vim/custom
 
