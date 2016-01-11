@@ -47,6 +47,9 @@ set runtimepath^=~/.vim/bundle/vim-clojure-highlight
 " better parenthesis
 set runtimepath^=~/.vim/bundle/rainbow_parentheses.vim
 
+" markdown
+set runtimepath^=~/.vim/bundle/vim-markdown
+
 " custom configuration for plugins
 set runtimepath^=~/.vim/custom
 
