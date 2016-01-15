@@ -67,7 +67,7 @@ set shiftwidth=2
 " Nice editing features
 set number
 set cursorline
-set cursorcolumn
+"set cursorcolumn
 
 " swapfile goes to /tmp dir
 set swapfile
